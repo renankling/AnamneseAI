@@ -1,0 +1,23 @@
+{
+  "nome": "Carlos",
+  "idade": 54,
+  "sexo": "Masculino",
+
+  "queixa_principal": "Dor no peito",
+
+  "historia_doenca_atual": "A dor começou há dois dias e piora ao esforço.",
+
+  "sintomas": [
+    "Falta de ar",
+    "Suor frio",
+    "Cansaço"
+  ],
+
+  "doencas_previas": [
+    "Hipertensão"
+  ],
+
+  "medicamentos": [
+    "Losartana"
+  ]
+}
