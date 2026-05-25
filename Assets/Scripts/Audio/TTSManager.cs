@@ -7,8 +7,6 @@ using UnityEngine.Networking;
 
 public class TTSManager : MonoBehaviour
 {
-    [Header("Google Cloud")]
-    [SerializeField] private string apiKey;
 
     [Header("Audio")]
     [SerializeField] private AudioSource patientAudioSource;
@@ -67,7 +65,7 @@ public class TTSManager : MonoBehaviour
 
         UnityWebRequest request =
             new UnityWebRequest(
-                apiUrl + apiKey,
+                apiUrl + APIKeyManager.Instance.Keys.google_cloud_api_key,
                 "POST"
             );
 

@@ -18,6 +18,10 @@ public class UIManager : MonoBehaviour
 
         geminiManager.AskPatient(question);
     }
+    public void SetQuestionText(string text)
+    {
+        questionInput.text = text;
+    }
 
     public void UpdateResponseText(string response)
     {

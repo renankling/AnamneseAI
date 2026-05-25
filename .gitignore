@@ -10,7 +10,7 @@ MemoryCaptures/
 Recordings/
 
 Assets/AssetStoreTools*
-
+Assets/StreamingAssets/api_keys.json
 .vs/
 .idea/
 .gradle/

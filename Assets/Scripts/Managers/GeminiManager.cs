@@ -5,8 +5,6 @@ using UnityEngine.Networking;
 
 public class GeminiManager : MonoBehaviour
 {
-    [Header("API")]
-    [SerializeField] private string apiKey;
 
     [Header("References")]
     [SerializeField] private PatientDataManager patientDataManager;
@@ -78,7 +76,7 @@ public class GeminiManager : MonoBehaviour
         byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonBody);
 
         UnityWebRequest request =
-            new UnityWebRequest(apiUrl + apiKey, "POST");
+            new UnityWebRequest(apiUrl + APIKeyManager.Instance.Keys.gemini_api_key, "POST");
 
         request.uploadHandler =
             new UploadHandlerRaw(bodyRaw);
